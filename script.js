@@ -16,8 +16,7 @@ function convertToRoman(num) {
  ];
  let result = '';
  for (let [symbol, value] of romanSymbols) {
- // Keep subtracting the value from the number and append the symbol to
-the result string
+ // Keep subtracting the value from the number and append the symbol to the result string
  while (num >= value) {
  result += symbol;
  num -= value;
